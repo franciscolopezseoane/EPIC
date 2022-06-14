@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A7029A2D285911F300939B83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029A2C285911F300939B83 /* AppDelegate.swift */; };
+		A7029A2F285911F300939B83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029A2E285911F300939B83 /* SceneDelegate.swift */; };
+		A7029A31285911F300939B83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029A30285911F300939B83 /* ViewController.swift */; };
+		A7029A34285911F300939B83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7029A32285911F300939B83 /* Main.storyboard */; };
+		A7029A36285911F500939B83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7029A35285911F500939B83 /* Assets.xcassets */; };
+		A7029A39285911F500939B83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7029A37285911F500939B83 /* LaunchScreen.storyboard */; };
+		A7029A44285911F500939B83 /* EPICTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029A43285911F500939B83 /* EPICTests.swift */; };
+		A7029A4E285911F500939B83 /* EPICUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029A4D285911F500939B83 /* EPICUITests.swift */; };
+		A7029A50285911F500939B83 /* EPICUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029A4F285911F500939B83 /* EPICUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7029A40285911F500939B83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7029A21285911F300939B83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7029A28285911F300939B83;
+			remoteInfo = EPIC;
+		};
+		A7029A4A285911F500939B83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7029A21285911F300939B83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7029A28285911F300939B83;
+			remoteInfo = EPIC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A7029A29285911F300939B83 /* EPIC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EPIC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7029A2C285911F300939B83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A7029A2E285911F300939B83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A7029A30285911F300939B83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A7029A33285911F300939B83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A7029A35285911F500939B83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7029A38285911F500939B83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A7029A3A285911F500939B83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7029A3F285911F500939B83 /* EPICTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EPICTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7029A43285911F500939B83 /* EPICTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPICTests.swift; sourceTree = "<group>"; };
+		A7029A49285911F500939B83 /* EPICUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EPICUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7029A4D285911F500939B83 /* EPICUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPICUITests.swift; sourceTree = "<group>"; };
+		A7029A4F285911F500939B83 /* EPICUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPICUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7029A26285911F300939B83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7029A3C285911F500939B83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7029A46285911F500939B83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A7029A20285911F300939B83 = {
+			isa = PBXGroup;
+			children = (
+				A7029A2B285911F300939B83 /* EPIC */,
+				A7029A42285911F500939B83 /* EPICTests */,
+				A7029A4C285911F500939B83 /* EPICUITests */,
+				A7029A2A285911F300939B83 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A7029A2A285911F300939B83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7029A29285911F300939B83 /* EPIC.app */,
+				A7029A3F285911F500939B83 /* EPICTests.xctest */,
+				A7029A49285911F500939B83 /* EPICUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7029A2B285911F300939B83 /* EPIC */ = {
+			isa = PBXGroup;
+			children = (
+				A7029A2C285911F300939B83 /* AppDelegate.swift */,
+				A7029A2E285911F300939B83 /* SceneDelegate.swift */,
+				A7029A30285911F300939B83 /* ViewController.swift */,
+				A7029A32285911F300939B83 /* Main.storyboard */,
+				A7029A35285911F500939B83 /* Assets.xcassets */,
+				A7029A37285911F500939B83 /* LaunchScreen.storyboard */,
+				A7029A3A285911F500939B83 /* Info.plist */,
+			);
+			path = EPIC;
+			sourceTree = "<group>";
+		};
+		A7029A42285911F500939B83 /* EPICTests */ = {
+			isa = PBXGroup;
+			children = (
+				A7029A43285911F500939B83 /* EPICTests.swift */,
+			);
+			path = EPICTests;
+			sourceTree = "<group>";
+		};
+		A7029A4C285911F500939B83 /* EPICUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A7029A4D285911F500939B83 /* EPICUITests.swift */,
+				A7029A4F285911F500939B83 /* EPICUITestsLaunchTests.swift */,
+			);
+			path = EPICUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7029A28285911F300939B83 /* EPIC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7029A53285911F500939B83 /* Build configuration list for PBXNativeTarget "EPIC" */;
+			buildPhases = (
+				A7029A25285911F300939B83 /* Sources */,
+				A7029A26285911F300939B83 /* Frameworks */,
+				A7029A27285911F300939B83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EPIC;
+			productName = EPIC;
+			productReference = A7029A29285911F300939B83 /* EPIC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A7029A3E285911F500939B83 /* EPICTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7029A56285911F500939B83 /* Build configuration list for PBXNativeTarget "EPICTests" */;
+			buildPhases = (
+				A7029A3B285911F500939B83 /* Sources */,
+				A7029A3C285911F500939B83 /* Frameworks */,
+				A7029A3D285911F500939B83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7029A41285911F500939B83 /* PBXTargetDependency */,
+			);
+			name = EPICTests;
+			productName = EPICTests;
+			productReference = A7029A3F285911F500939B83 /* EPICTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A7029A48285911F500939B83 /* EPICUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7029A59285911F500939B83 /* Build configuration list for PBXNativeTarget "EPICUITests" */;
+			buildPhases = (
+				A7029A45285911F500939B83 /* Sources */,
+				A7029A46285911F500939B83 /* Frameworks */,
+				A7029A47285911F500939B83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7029A4B285911F500939B83 /* PBXTargetDependency */,
+			);
+			name = EPICUITests;
+			productName = EPICUITests;
+			productReference = A7029A49285911F500939B83 /* EPICUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7029A21285911F300939B83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					A7029A28285911F300939B83 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					A7029A3E285911F500939B83 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = A7029A28285911F300939B83;
+					};
+					A7029A48285911F500939B83 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = A7029A28285911F300939B83;
+					};
+				};
+			};
+			buildConfigurationList = A7029A24285911F300939B83 /* Build configuration list for PBXProject "EPIC" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7029A20285911F300939B83;
+			productRefGroup = A7029A2A285911F300939B83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7029A28285911F300939B83 /* EPIC */,
+				A7029A3E285911F500939B83 /* EPICTests */,
+				A7029A48285911F500939B83 /* EPICUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7029A27285911F300939B83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7029A39285911F500939B83 /* LaunchScreen.storyboard in Resources */,
+				A7029A36285911F500939B83 /* Assets.xcassets in Resources */,
+				A7029A34285911F300939B83 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7029A3D285911F500939B83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7029A47285911F500939B83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7029A25285911F300939B83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7029A31285911F300939B83 /* ViewController.swift in Sources */,
+				A7029A2D285911F300939B83 /* AppDelegate.swift in Sources */,
+				A7029A2F285911F300939B83 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7029A3B285911F500939B83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7029A44285911F500939B83 /* EPICTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7029A45285911F500939B83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7029A4E285911F500939B83 /* EPICUITests.swift in Sources */,
+				A7029A50285911F500939B83 /* EPICUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7029A41285911F500939B83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7029A28285911F300939B83 /* EPIC */;
+			targetProxy = A7029A40285911F500939B83 /* PBXContainerItemProxy */;
+		};
+		A7029A4B285911F500939B83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7029A28285911F300939B83 /* EPIC */;
+			targetProxy = A7029A4A285911F500939B83 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A7029A32285911F300939B83 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7029A33285911F300939B83 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A7029A37285911F500939B83 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7029A38285911F500939B83 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A7029A51285911F500939B83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A7029A52285911F500939B83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7029A54285911F500939B83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AL3WL84F45;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EPIC/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.franciscolopez.EPIC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7029A55285911F500939B83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AL3WL84F45;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EPIC/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.franciscolopez.EPIC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A7029A57285911F500939B83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AL3WL84F45;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.franciscolopez.EPICTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EPIC.app/EPIC";
+			};
+			name = Debug;
+		};
+		A7029A58285911F500939B83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AL3WL84F45;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.franciscolopez.EPICTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EPIC.app/EPIC";
+			};
+			name = Release;
+		};
+		A7029A5A285911F500939B83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AL3WL84F45;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.franciscolopez.EPICUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EPIC;
+			};
+			name = Debug;
+		};
+		A7029A5B285911F500939B83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AL3WL84F45;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.franciscolopez.EPICUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EPIC;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7029A24285911F300939B83 /* Build configuration list for PBXProject "EPIC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7029A51285911F500939B83 /* Debug */,
+				A7029A52285911F500939B83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7029A53285911F500939B83 /* Build configuration list for PBXNativeTarget "EPIC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7029A54285911F500939B83 /* Debug */,
+				A7029A55285911F500939B83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7029A56285911F500939B83 /* Build configuration list for PBXNativeTarget "EPICTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7029A57285911F500939B83 /* Debug */,
+				A7029A58285911F500939B83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7029A59285911F500939B83 /* Build configuration list for PBXNativeTarget "EPICUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7029A5A285911F500939B83 /* Debug */,
+				A7029A5B285911F500939B83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7029A21285911F300939B83 /* Project object */;
+}
