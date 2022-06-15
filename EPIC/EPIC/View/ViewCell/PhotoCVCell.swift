@@ -21,8 +21,11 @@ class PhotoCVCell: UICollectionViewCell {
     }
     
     func setup(photoModel: PhotoList){
-//        self.imageView?.kf.setImage(with: self.myImgService.getThumbnails(photoModel.date, photoModel.identifier))
+        activityIndicator.isHidden = false
+        activityIndicator.startAnimating()
         self.imageView?.kf.setImage(with: self.myImgService.getThumbnails(photoModel.date, photoModel.identifier), placeholder: UIImage(named: "placeHolder"))
+        activityIndicator.startAnimating()
+        activityIndicator.isHidden = true
     }
 }
 

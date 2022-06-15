@@ -10,23 +10,60 @@ import UIKit
 class PhotoScreenViewController: UIViewController {
 
     var theDate: String?
-    var theImage: String?
+    var theIdentifier: String?
+    var epicPhoto: UIImage?
+    private var viewProgress: UIActivityIndicatorView!
+    
+    @IBOutlet weak var theImageView: UIImageView!
+    
+    private var presenter = PhotoPresenter(getService: APIManager())
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
+        presenter.attachView(view: self)
+    }
+}
 
-        // Do any additional setup after loading the view.
+extension PhotoScreenViewController {
+    
+    func setupView(){
+        self.setupProgressView()
+        self.startSearch()
+       
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func startSearch(){
+        let theDate = theDate
+        let query = theIdentifier
+        self.presenter.getPhoto(theDate ?? "", query ?? "")
     }
-    */
+    
+    func setupProgressView(){
+        self.viewProgress = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
+        self.viewProgress.center = self.view.center
+        self.viewProgress.isHidden = true
+        self.view.addSubview(self.viewProgress)
+    }
+}
 
+extension PhotoScreenViewController: PhotoView {
+    func startLoading() {
+        self.viewProgress.isHidden = false
+        self.viewProgress.startAnimating()
+    }
+    
+    func stopLoading() {
+        DispatchQueue.main.async {
+            self.viewProgress.stopAnimating()
+            self.viewProgress.hidesWhenStopped = true
+        }
+    }
+    
+    func ShowData(_ photo: Any) {
+        self.epicPhoto = photo as? UIImage
+        DispatchQueue.main.async {
+            self.theImageView.image = self.epicPhoto
+        }
+    }
 }

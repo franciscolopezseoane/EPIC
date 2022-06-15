@@ -58,5 +58,14 @@ class APIManager {
             return URL(string: "https://epic.gsfc.nasa.gov/contents/assets/logo.png")!
         }
     }
+    
+    func getResPhoto(_ date: String, _ query: String, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
+
+        let url = URL(string: "https://epic.gsfc.nasa.gov/archive/natural/"+date+"/jpg/epic_1b_"+query+".jpg")!
+
+        URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
+        
+    }
 }
   
+

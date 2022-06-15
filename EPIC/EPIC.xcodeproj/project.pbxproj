@@ -29,6 +29,7 @@
 		A7029ACC28596CE700939B83 /* PhotoListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029ACB28596CE700939B83 /* PhotoListModel.swift */; };
 		A7029ACE28596F1E00939B83 /* PhotoListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029ACD28596F1E00939B83 /* PhotoListPresenter.swift */; };
 		A7029AD12859728800939B83 /* PhotoCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029ACF2859728800939B83 /* PhotoCVCell.swift */; };
+		A7916B36285A4DC200E46D53 /* PhotoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7916B35285A4DC200E46D53 /* PhotoPresenter.swift */; };
 		B94D86237297D6A056397EA5 /* Pods_EPIC_EPICUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 673B4FCEDF731A6D7C9BE43B /* Pods_EPIC_EPICUITests.framework */; };
 		E91D9304349C582AC5FA4D5F /* Pods_EPIC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C445131CAF798AF99D8947E /* Pods_EPIC.framework */; };
 /* End PBXBuildFile section */
@@ -82,6 +83,7 @@
 		A7029ACB28596CE700939B83 /* PhotoListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListModel.swift; sourceTree = "<group>"; };
 		A7029ACD28596F1E00939B83 /* PhotoListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListPresenter.swift; sourceTree = "<group>"; };
 		A7029ACF2859728800939B83 /* PhotoCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCVCell.swift; sourceTree = "<group>"; };
+		A7916B35285A4DC200E46D53 /* PhotoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPresenter.swift; sourceTree = "<group>"; };
 		CCD4B0A5EF107C4F39F6DD17 /* Pods-EPIC-EPICUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EPIC-EPICUITests.debug.xcconfig"; path = "Target Support Files/Pods-EPIC-EPICUITests/Pods-EPIC-EPICUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D1BD3EFD695F5786C88E2E36 /* Pods_EPICTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EPICTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE7D1576BBABD746DBA7EABB /* Pods-EPIC-EPICUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EPIC-EPICUITests.release.xcconfig"; path = "Target Support Files/Pods-EPIC-EPICUITests/Pods-EPIC-EPICUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 			children = (
 				A7029ABE285960AF00939B83 /* DatePresenter.swift */,
 				A7029ACD28596F1E00939B83 /* PhotoListPresenter.swift */,
+				A7916B35285A4DC200E46D53 /* PhotoPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -512,6 +515,7 @@
 				A7029ACC28596CE700939B83 /* PhotoListModel.swift in Sources */,
 				A7029AD12859728800939B83 /* PhotoCVCell.swift in Sources */,
 				A7029ACE28596F1E00939B83 /* PhotoListPresenter.swift in Sources */,
+				A7916B36285A4DC200E46D53 /* PhotoPresenter.swift in Sources */,
 				A7029A2D285911F300939B83 /* AppDelegate.swift in Sources */,
 				A7029AC1285960EB00939B83 /* protocolView.swift in Sources */,
 				A7029AC32859615100939B83 /* APIManager.swift in Sources */,

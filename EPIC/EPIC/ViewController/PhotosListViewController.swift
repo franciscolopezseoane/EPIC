@@ -97,16 +97,13 @@ extension PhotosListViewController: UICollectionViewDelegate, UICollectionViewDa
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        photoCollection.reloadData()
-    }
-    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let selectedItem = searchPhotos[indexPath.row]
         
         if let vc = storyboard?.instantiateViewController(withIdentifier: "PhotoScreenViewController") as? PhotoScreenViewController{
             vc.theDate = selectedItem.date
-            vc.theImage = selectedItem.identifier
+            vc.theIdentifier = selectedItem.identifier
+            self.navigationController!.pushViewController(vc, animated: true)
         }
     }
 }
