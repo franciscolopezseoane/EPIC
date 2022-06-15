@@ -28,6 +28,13 @@ class PhotosListViewController: UIViewController {
         photoCollection.dataSource = self
     }
     
+    @IBAction func playerBtn(_ sender: Any) {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "PlayerViewController") as? PlayerViewController {
+            let item = theList
+            vc.photosArr = item
+            self.navigationController!.pushViewController(vc, animated: true)
+        }
+    }
 }
 
 extension PhotosListViewController {
@@ -74,6 +81,8 @@ extension PhotosListViewController {
             self.photoCollection.reloadData()
         }
     }
+    
+    
 }
 
 extension PhotosListViewController: UICollectionViewDelegate, UICollectionViewDataSource {

@@ -60,11 +60,8 @@ class APIManager {
     }
     
     func getResPhoto(_ date: String, _ query: String, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
-
-        let url = URL(string: "https://epic.gsfc.nasa.gov/archive/natural/"+date+"/jpg/epic_1b_"+query+".jpg")!
-
+        let url = URL(string: "https://epic.gsfc.nasa.gov/archive/natural/"+date+"/png/epic_1b_"+query+".png")!
         URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
-        
     }
 }
   

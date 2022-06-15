@@ -127,7 +127,7 @@
                     <navigationItem key="navigationItem" id="wej-jA-01x">
                         <barButtonItem key="rightBarButtonItem" title="Player" id="KbJ-kt-hUM">
                             <connections>
-                                <segue destination="Utx-6G-S0z" kind="show" id="Ht0-8g-luf"/>
+                                <action selector="playerBtn:" destination="AwO-i0-oBb" id="JK3-x9-2vM"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -148,7 +148,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lww-6Z-HEh">
-                                <rect key="frame" x="-4" y="41" width="398" height="762"/>
+                                <rect key="frame" x="-4" y="88" width="398" height="715"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SXK-qo-MQ3">
@@ -186,26 +186,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLAYER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95M-6m-klI">
-                                <rect key="frame" x="98" y="246" width="216" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6lw-se-6To">
+                                <rect key="frame" x="10" y="168" width="370" height="321"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="321" id="xmc-Uv-sa2"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Y32-Y1-dGD">
+                                    <size key="itemSize" width="366" height="235"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SliderCollectionViewCell" id="CoN-bW-Zvc" customClass="SliderCollectionViewCell" customModule="EPIC" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="43" width="366" height="235"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="366" height="235"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="111" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FQK-T8-oh3">
+                                                    <rect key="frame" x="60" y="0.0" width="246" height="235"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="FQK-T8-oh3" secondAttribute="trailing" constant="60" id="0sp-P8-Woy"/>
+                                            <constraint firstItem="FQK-T8-oh3" firstAttribute="leading" secondItem="CoN-bW-Zvc" secondAttribute="leading" constant="60" id="3V2-jz-cmH"/>
+                                            <constraint firstAttribute="bottom" secondItem="FQK-T8-oh3" secondAttribute="bottom" id="cqo-AN-kJS"/>
+                                            <constraint firstItem="FQK-T8-oh3" firstAttribute="top" secondItem="CoN-bW-Zvc" secondAttribute="top" id="qdk-Bc-b0C"/>
+                                        </constraints>
+                                        <size key="customSize" width="366" height="235"/>
+                                        <connections>
+                                            <outlet property="sliderImageView" destination="FQK-T8-oh3" id="6tP-fe-SMX"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Z48-5j-VHJ">
+                                <rect key="frame" x="20" y="138" width="350" height="25"/>
+                            </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="V87-mb-oHC"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="95M-6m-klI" firstAttribute="top" secondItem="V87-mb-oHC" secondAttribute="top" constant="158" id="4dz-jy-rIE"/>
-                            <constraint firstItem="V87-mb-oHC" firstAttribute="trailing" secondItem="95M-6m-klI" secondAttribute="trailing" constant="76" id="tfJ-ds-M4K"/>
-                            <constraint firstItem="95M-6m-klI" firstAttribute="leading" secondItem="V87-mb-oHC" secondAttribute="leading" constant="98" id="wOE-fQ-28s"/>
+                            <constraint firstItem="6lw-se-6To" firstAttribute="top" secondItem="V87-mb-oHC" secondAttribute="top" constant="80" id="4gp-zI-Jwr"/>
+                            <constraint firstItem="V87-mb-oHC" firstAttribute="trailing" secondItem="Z48-5j-VHJ" secondAttribute="trailing" constant="20" id="CFa-4c-Idy"/>
+                            <constraint firstItem="V87-mb-oHC" firstAttribute="trailing" secondItem="6lw-se-6To" secondAttribute="trailing" constant="10" id="PW3-rT-KK5"/>
+                            <constraint firstItem="Z48-5j-VHJ" firstAttribute="leading" secondItem="V87-mb-oHC" secondAttribute="leading" constant="20" id="m66-c1-Wkd"/>
+                            <constraint firstItem="6lw-se-6To" firstAttribute="leading" secondItem="V87-mb-oHC" secondAttribute="leading" constant="10" id="mQD-g7-D1H"/>
+                            <constraint firstItem="6lw-se-6To" firstAttribute="top" secondItem="Z48-5j-VHJ" secondAttribute="top" constant="30" id="qUG-Fr-fBF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="CPS-ew-LRo"/>
+                    <connections>
+                        <outlet property="pageView" destination="Z48-5j-VHJ" id="IxY-5i-txR"/>
+                        <outlet property="sliderCollection" destination="6lw-se-6To" id="O1v-Oq-K7f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ee8-r9-dJb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1727.6923076923076" y="819.66824644549763"/>
+            <point key="canvasLocation" x="2671" y="820"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qbp-ks-VbI">
@@ -260,6 +302,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rYw-hq-r1B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="34" y="1499"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ycA-7u-lFW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bZp-g6-yiD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zLT-1J-hqg">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Utx-6G-S0z" kind="relationship" relationship="rootViewController" id="hMC-qr-1uN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ODP-4b-9CK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1906" y="820"/>
         </scene>
     </scenes>
     <resources>
