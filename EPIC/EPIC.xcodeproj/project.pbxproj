@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D84FC1A1F3D7E31428E8FE6 /* Pods_EPICTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1BD3EFD695F5786C88E2E36 /* Pods_EPICTests.framework */; };
 		A7029A2D285911F300939B83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029A2C285911F300939B83 /* AppDelegate.swift */; };
 		A7029A2F285911F300939B83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029A2E285911F300939B83 /* SceneDelegate.swift */; };
 		A7029A31285911F300939B83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029A30285911F300939B83 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 		A7029A44285911F500939B83 /* EPICTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029A43285911F500939B83 /* EPICTests.swift */; };
 		A7029A4E285911F500939B83 /* EPICUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029A4D285911F500939B83 /* EPICUITests.swift */; };
 		A7029A50285911F500939B83 /* EPICUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029A4F285911F500939B83 /* EPICUITestsLaunchTests.swift */; };
+		B94D86237297D6A056397EA5 /* Pods_EPIC_EPICUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 673B4FCEDF731A6D7C9BE43B /* Pods_EPIC_EPICUITests.framework */; };
+		E91D9304349C582AC5FA4D5F /* Pods_EPIC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C445131CAF798AF99D8947E /* Pods_EPIC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C445131CAF798AF99D8947E /* Pods_EPIC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EPIC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A5B90EA8D570AA7205FC6FA /* Pods-EPIC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EPIC.release.xcconfig"; path = "Target Support Files/Pods-EPIC/Pods-EPIC.release.xcconfig"; sourceTree = "<group>"; };
+		4526742C7B6A8E8FC90FDAAA /* Pods-EPICTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EPICTests.debug.xcconfig"; path = "Target Support Files/Pods-EPICTests/Pods-EPICTests.debug.xcconfig"; sourceTree = "<group>"; };
+		673B4FCEDF731A6D7C9BE43B /* Pods_EPIC_EPICUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EPIC_EPICUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AE9A909437B53978721B3A2 /* Pods-EPIC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EPIC.debug.xcconfig"; path = "Target Support Files/Pods-EPIC/Pods-EPIC.debug.xcconfig"; sourceTree = "<group>"; };
+		A41778E5C18B207EAA2B0F70 /* Pods-EPICTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EPICTests.release.xcconfig"; path = "Target Support Files/Pods-EPICTests/Pods-EPICTests.release.xcconfig"; sourceTree = "<group>"; };
 		A7029A29285911F300939B83 /* EPIC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EPIC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7029A2C285911F300939B83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7029A2E285911F300939B83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +58,9 @@
 		A7029A49285911F500939B83 /* EPICUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EPICUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7029A4D285911F500939B83 /* EPICUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPICUITests.swift; sourceTree = "<group>"; };
 		A7029A4F285911F500939B83 /* EPICUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPICUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CCD4B0A5EF107C4F39F6DD17 /* Pods-EPIC-EPICUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EPIC-EPICUITests.debug.xcconfig"; path = "Target Support Files/Pods-EPIC-EPICUITests/Pods-EPIC-EPICUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D1BD3EFD695F5786C88E2E36 /* Pods_EPICTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EPICTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE7D1576BBABD746DBA7EABB /* Pods-EPIC-EPICUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EPIC-EPICUITests.release.xcconfig"; path = "Target Support Files/Pods-EPIC-EPICUITests/Pods-EPIC-EPICUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E91D9304349C582AC5FA4D5F /* Pods_EPIC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D84FC1A1F3D7E31428E8FE6 /* Pods_EPICTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B94D86237297D6A056397EA5 /* Pods_EPIC_EPICUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8626539AF337683A83F185C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AE9A909437B53978721B3A2 /* Pods-EPIC.debug.xcconfig */,
+				2A5B90EA8D570AA7205FC6FA /* Pods-EPIC.release.xcconfig */,
+				CCD4B0A5EF107C4F39F6DD17 /* Pods-EPIC-EPICUITests.debug.xcconfig */,
+				EE7D1576BBABD746DBA7EABB /* Pods-EPIC-EPICUITests.release.xcconfig */,
+				4526742C7B6A8E8FC90FDAAA /* Pods-EPICTests.debug.xcconfig */,
+				A41778E5C18B207EAA2B0F70 /* Pods-EPICTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A7029A20285911F300939B83 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +112,8 @@
 				A7029A42285911F500939B83 /* EPICTests */,
 				A7029A4C285911F500939B83 /* EPICUITests */,
 				A7029A2A285911F300939B83 /* Products */,
+				8626539AF337683A83F185C7 /* Pods */,
+				D050AD1E878FC999884D4F2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +158,16 @@
 			path = EPICUITests;
 			sourceTree = "<group>";
 		};
+		D050AD1E878FC999884D4F2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C445131CAF798AF99D8947E /* Pods_EPIC.framework */,
+				673B4FCEDF731A6D7C9BE43B /* Pods_EPIC_EPICUITests.framework */,
+				D1BD3EFD695F5786C88E2E36 /* Pods_EPICTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,6 +175,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7029A53285911F500939B83 /* Build configuration list for PBXNativeTarget "EPIC" */;
 			buildPhases = (
+				F9FAF3088E9763089085D7AA /* [CP] Check Pods Manifest.lock */,
 				A7029A25285911F300939B83 /* Sources */,
 				A7029A26285911F300939B83 /* Frameworks */,
 				A7029A27285911F300939B83 /* Resources */,
@@ -151,6 +193,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7029A56285911F500939B83 /* Build configuration list for PBXNativeTarget "EPICTests" */;
 			buildPhases = (
+				1FC0557BE984E2247B0D6155 /* [CP] Check Pods Manifest.lock */,
 				A7029A3B285911F500939B83 /* Sources */,
 				A7029A3C285911F500939B83 /* Frameworks */,
 				A7029A3D285911F500939B83 /* Resources */,
@@ -169,6 +212,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7029A59285911F500939B83 /* Build configuration list for PBXNativeTarget "EPICUITests" */;
 			buildPhases = (
+				B3597567914787DEA66B1211 /* [CP] Check Pods Manifest.lock */,
 				A7029A45285911F500939B83 /* Sources */,
 				A7029A46285911F500939B83 /* Frameworks */,
 				A7029A47285911F500939B83 /* Resources */,
@@ -252,6 +296,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FC0557BE984E2247B0D6155 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EPICTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3597567914787DEA66B1211 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EPIC-EPICUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9FAF3088E9763089085D7AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EPIC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A7029A25285911F300939B83 /* Sources */ = {
@@ -432,6 +545,7 @@
 		};
 		A7029A54285911F500939B83 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AE9A909437B53978721B3A2 /* Pods-EPIC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -440,6 +554,7 @@
 				DEVELOPMENT_TEAM = AL3WL84F45;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EPIC/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EPIC;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -460,6 +575,7 @@
 		};
 		A7029A55285911F500939B83 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A5B90EA8D570AA7205FC6FA /* Pods-EPIC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -468,6 +584,7 @@
 				DEVELOPMENT_TEAM = AL3WL84F45;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EPIC/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EPIC;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -488,6 +605,7 @@
 		};
 		A7029A57285911F500939B83 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4526742C7B6A8E8FC90FDAAA /* Pods-EPICTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +626,7 @@
 		};
 		A7029A58285911F500939B83 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A41778E5C18B207EAA2B0F70 /* Pods-EPICTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +647,7 @@
 		};
 		A7029A5A285911F500939B83 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCD4B0A5EF107C4F39F6DD17 /* Pods-EPIC-EPICUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +666,7 @@
 		};
 		A7029A5B285911F500939B83 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE7D1576BBABD746DBA7EABB /* Pods-EPIC-EPICUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
