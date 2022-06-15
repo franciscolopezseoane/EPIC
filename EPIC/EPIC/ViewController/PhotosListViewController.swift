@@ -17,6 +17,7 @@ class PhotosListViewController: UIViewController {
     
     @IBOutlet weak var photoCollection: UICollectionView!
     
+    
     private var presenter = PhotoListPresenter(getService: APIManager())
     
     override func viewDidLoad() {
@@ -87,8 +88,12 @@ extension PhotosListViewController: UICollectionViewDelegate, UICollectionViewDa
         
         
         if let photo = searchPhotos[indexPath.row] as? PhotoList {
+            cell.activityIndicator.isHidden = false
+            cell.activityIndicator.startAnimating()
             cell.setup(photoModel: photo)
         }
+        cell.activityIndicator.stopAnimating()
+        cell.activityIndicator.isHidden = true
         return cell
     }
     

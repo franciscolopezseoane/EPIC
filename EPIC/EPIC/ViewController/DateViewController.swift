@@ -66,8 +66,7 @@ extension DateViewController: UITableViewDelegate, UITableViewDataSource {
         
         if let vc = storyboard?.instantiateViewController(withIdentifier: "PhotosListViewController") as? PhotosListViewController {
             vc.theDate = selectedDate.date
-            vc.modalPresentationStyle = .automatic
-            self.present(vc, animated: true, completion: nil)
+            self.navigationController!.pushViewController(vc, animated: true)
         }
     }
 }

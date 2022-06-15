@@ -11,6 +11,8 @@ import Kingfisher
 class PhotoCVCell: UICollectionViewCell {
     
     @IBOutlet weak var imageView: UIImageView?
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     var myImgService = APIManager()
     
     override func awakeFromNib() {
