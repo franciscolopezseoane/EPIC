@@ -10,13 +10,22 @@
 		8D84FC1A1F3D7E31428E8FE6 /* Pods_EPICTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1BD3EFD695F5786C88E2E36 /* Pods_EPICTests.framework */; };
 		A7029A2D285911F300939B83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029A2C285911F300939B83 /* AppDelegate.swift */; };
 		A7029A2F285911F300939B83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029A2E285911F300939B83 /* SceneDelegate.swift */; };
-		A7029A31285911F300939B83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029A30285911F300939B83 /* ViewController.swift */; };
+		A7029A31285911F300939B83 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029A30285911F300939B83 /* DateViewController.swift */; };
 		A7029A34285911F300939B83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7029A32285911F300939B83 /* Main.storyboard */; };
 		A7029A36285911F500939B83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7029A35285911F500939B83 /* Assets.xcassets */; };
 		A7029A39285911F500939B83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7029A37285911F500939B83 /* LaunchScreen.storyboard */; };
 		A7029A44285911F500939B83 /* EPICTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029A43285911F500939B83 /* EPICTests.swift */; };
 		A7029A4E285911F500939B83 /* EPICUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029A4D285911F500939B83 /* EPICUITests.swift */; };
 		A7029A50285911F500939B83 /* EPICUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029A4F285911F500939B83 /* EPICUITestsLaunchTests.swift */; };
+		A7029AB828595E7500939B83 /* PhotosListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029AB728595E7500939B83 /* PhotosListViewController.swift */; };
+		A7029ABB28595F2300939B83 /* PhotoScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029ABA28595F2300939B83 /* PhotoScreenViewController.swift */; };
+		A7029ABD28595F6500939B83 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029ABC28595F6500939B83 /* PlayerViewController.swift */; };
+		A7029ABF285960AF00939B83 /* DatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029ABE285960AF00939B83 /* DatePresenter.swift */; };
+		A7029AC1285960EB00939B83 /* ObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029AC0285960EB00939B83 /* ObjectView.swift */; };
+		A7029AC32859615100939B83 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029AC22859615100939B83 /* APIManager.swift */; };
+		A7029AC52859617E00939B83 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029AC42859617E00939B83 /* Object.swift */; };
+		A7029AC9285962F000939B83 /* DateTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029AC7285962F000939B83 /* DateTVCell.swift */; };
+		A7029ACA285962F000939B83 /* DateTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7029AC8285962F000939B83 /* DateTVCell.xib */; };
 		B94D86237297D6A056397EA5 /* Pods_EPIC_EPICUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 673B4FCEDF731A6D7C9BE43B /* Pods_EPIC_EPICUITests.framework */; };
 		E91D9304349C582AC5FA4D5F /* Pods_EPIC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C445131CAF798AF99D8947E /* Pods_EPIC.framework */; };
 /* End PBXBuildFile section */
@@ -48,7 +57,7 @@
 		A7029A29285911F300939B83 /* EPIC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EPIC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7029A2C285911F300939B83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7029A2E285911F300939B83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A7029A30285911F300939B83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A7029A30285911F300939B83 /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
 		A7029A33285911F300939B83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7029A35285911F500939B83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7029A38285911F500939B83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,6 +67,15 @@
 		A7029A49285911F500939B83 /* EPICUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EPICUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7029A4D285911F500939B83 /* EPICUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPICUITests.swift; sourceTree = "<group>"; };
 		A7029A4F285911F500939B83 /* EPICUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPICUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A7029AB728595E7500939B83 /* PhotosListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosListViewController.swift; sourceTree = "<group>"; };
+		A7029ABA28595F2300939B83 /* PhotoScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoScreenViewController.swift; sourceTree = "<group>"; };
+		A7029ABC28595F6500939B83 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		A7029ABE285960AF00939B83 /* DatePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePresenter.swift; sourceTree = "<group>"; };
+		A7029AC0285960EB00939B83 /* ObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectView.swift; sourceTree = "<group>"; };
+		A7029AC22859615100939B83 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		A7029AC42859617E00939B83 /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
+		A7029AC7285962F000939B83 /* DateTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTVCell.swift; sourceTree = "<group>"; };
+		A7029AC8285962F000939B83 /* DateTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateTVCell.xib; sourceTree = "<group>"; };
 		CCD4B0A5EF107C4F39F6DD17 /* Pods-EPIC-EPICUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EPIC-EPICUITests.debug.xcconfig"; path = "Target Support Files/Pods-EPIC-EPICUITests/Pods-EPIC-EPICUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D1BD3EFD695F5786C88E2E36 /* Pods_EPICTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EPICTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE7D1576BBABD746DBA7EABB /* Pods-EPIC-EPICUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EPIC-EPICUITests.release.xcconfig"; path = "Target Support Files/Pods-EPIC-EPICUITests/Pods-EPIC-EPICUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,7 +119,6 @@
 				4526742C7B6A8E8FC90FDAAA /* Pods-EPICTests.debug.xcconfig */,
 				A41778E5C18B207EAA2B0F70 /* Pods-EPICTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -130,12 +147,13 @@
 		A7029A2B285911F300939B83 /* EPIC */ = {
 			isa = PBXGroup;
 			children = (
-				A7029A2C285911F300939B83 /* AppDelegate.swift */,
-				A7029A2E285911F300939B83 /* SceneDelegate.swift */,
-				A7029A30285911F300939B83 /* ViewController.swift */,
-				A7029A32285911F300939B83 /* Main.storyboard */,
-				A7029A35285911F500939B83 /* Assets.xcassets */,
-				A7029A37285911F500939B83 /* LaunchScreen.storyboard */,
+				A7029AB628595CA600939B83 /* Main */,
+				A7029AB528595CA400939B83 /* Service */,
+				A7029AB428595CA000939B83 /* ViewController */,
+				A7029AB328595C9E00939B83 /* Presenter */,
+				A7029AB228595C9C00939B83 /* View */,
+				A7029AB128595C9A00939B83 /* Model */,
+				A7029AB028595C8F00939B83 /* Resources */,
 				A7029A3A285911F500939B83 /* Info.plist */,
 			);
 			path = EPIC;
@@ -156,6 +174,78 @@
 				A7029A4F285911F500939B83 /* EPICUITestsLaunchTests.swift */,
 			);
 			path = EPICUITests;
+			sourceTree = "<group>";
+		};
+		A7029AB028595C8F00939B83 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A7029A32285911F300939B83 /* Main.storyboard */,
+				A7029A35285911F500939B83 /* Assets.xcassets */,
+				A7029A37285911F500939B83 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A7029AB128595C9A00939B83 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A7029AC42859617E00939B83 /* Object.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A7029AB228595C9C00939B83 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A7029AC0285960EB00939B83 /* ObjectView.swift */,
+				A7029AC6285962D200939B83 /* ViewCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A7029AB328595C9E00939B83 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A7029ABE285960AF00939B83 /* DatePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A7029AB428595CA000939B83 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A7029A30285911F300939B83 /* DateViewController.swift */,
+				A7029AB728595E7500939B83 /* PhotosListViewController.swift */,
+				A7029ABA28595F2300939B83 /* PhotoScreenViewController.swift */,
+				A7029ABC28595F6500939B83 /* PlayerViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A7029AB528595CA400939B83 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A7029AC22859615100939B83 /* APIManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A7029AB628595CA600939B83 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A7029A2C285911F300939B83 /* AppDelegate.swift */,
+				A7029A2E285911F300939B83 /* SceneDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A7029AC6285962D200939B83 /* ViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A7029AC7285962F000939B83 /* DateTVCell.swift */,
+				A7029AC8285962F000939B83 /* DateTVCell.xib */,
+			);
+			path = ViewCell;
 			sourceTree = "<group>";
 		};
 		D050AD1E878FC999884D4F2D /* Frameworks */ = {
@@ -278,6 +368,7 @@
 				A7029A39285911F500939B83 /* LaunchScreen.storyboard in Resources */,
 				A7029A36285911F500939B83 /* Assets.xcassets in Resources */,
 				A7029A34285911F300939B83 /* Main.storyboard in Resources */,
+				A7029ACA285962F000939B83 /* DateTVCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,9 +462,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7029A31285911F300939B83 /* ViewController.swift in Sources */,
+				A7029AC52859617E00939B83 /* Object.swift in Sources */,
+				A7029A31285911F300939B83 /* DateViewController.swift in Sources */,
 				A7029A2D285911F300939B83 /* AppDelegate.swift in Sources */,
+				A7029AC1285960EB00939B83 /* ObjectView.swift in Sources */,
+				A7029AC32859615100939B83 /* APIManager.swift in Sources */,
+				A7029ABF285960AF00939B83 /* DatePresenter.swift in Sources */,
+				A7029AB828595E7500939B83 /* PhotosListViewController.swift in Sources */,
 				A7029A2F285911F300939B83 /* SceneDelegate.swift in Sources */,
+				A7029ABB28595F2300939B83 /* PhotoScreenViewController.swift in Sources */,
+				A7029ABD28595F6500939B83 /* PlayerViewController.swift in Sources */,
+				A7029AC9285962F000939B83 /* DateTVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
