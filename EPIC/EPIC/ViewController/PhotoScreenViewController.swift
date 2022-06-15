@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PhotoScreenViewController: UIViewController {
+class PhotoScreenViewController: UIViewController, UIScrollViewDelegate {
 
     var theDate: String?
     var theIdentifier: String?
@@ -15,6 +15,7 @@ class PhotoScreenViewController: UIViewController {
     private var viewProgress: UIActivityIndicatorView!
     
     @IBOutlet weak var theImageView: UIImageView!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     private var presenter = PhotoPresenter(getService: APIManager())
     
@@ -22,6 +23,13 @@ class PhotoScreenViewController: UIViewController {
         super.viewDidLoad()
         setupView()
         presenter.attachView(view: self)
+        scrollView.delegate = self
+        scrollView.minimumZoomScale = 1.0
+        scrollView.maximumZoomScale = 10.0
+    }
+    
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return theImageView
     }
 }
 
@@ -30,7 +38,6 @@ extension PhotoScreenViewController {
     func setupView(){
         self.setupProgressView()
         self.startSearch()
-       
     }
     
     func startSearch(){

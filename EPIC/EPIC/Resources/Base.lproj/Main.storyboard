@@ -147,27 +147,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SXK-qo-MQ3">
-                                <rect key="frame" x="10" y="118" width="370" height="662"/>
-                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lww-6Z-HEh">
+                                <rect key="frame" x="-4" y="41" width="398" height="762"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SXK-qo-MQ3">
+                                        <rect key="frame" x="20" y="20" width="358" height="722"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="U1o-kZ-IxL" appends="YES" id="IOz-PD-aIi"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="fy5-mM-39G"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="D0o-XJ-vzs"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bI4-Jk-gij"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="SXK-qo-MQ3" firstAttribute="top" secondItem="bI4-Jk-gij" secondAttribute="top" constant="30" id="343-cf-pUK"/>
-                            <constraint firstItem="bI4-Jk-gij" firstAttribute="trailing" secondItem="SXK-qo-MQ3" secondAttribute="trailing" constant="10" id="Lcm-E5-1TM"/>
-                            <constraint firstItem="bI4-Jk-gij" firstAttribute="bottom" secondItem="SXK-qo-MQ3" secondAttribute="bottom" constant="30" id="TAO-AF-8kY"/>
-                            <constraint firstItem="SXK-qo-MQ3" firstAttribute="leading" secondItem="bI4-Jk-gij" secondAttribute="leading" constant="10" id="eLQ-eF-IrE"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Tcf-rO-JQY"/>
                     <connections>
+                        <outlet property="scrollView" destination="Lww-6Z-HEh" id="CL1-T5-Mme"/>
                         <outlet property="theImageView" destination="SXK-qo-MQ3" id="k5r-JS-giw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eiW-83-UNe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="U1o-kZ-IxL"/>
             </objects>
-            <point key="canvasLocation" x="962" y="1499"/>
+            <point key="canvasLocation" x="961.53846153846155" y="1498.5781990521327"/>
         </scene>
         <!--Player View Controller-->
         <scene sceneID="cjS-3w-cES">
