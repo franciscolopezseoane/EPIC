@@ -26,7 +26,7 @@ class DatePresenter: NSObject {
     
     func getDatetList(){
         dateView?.startLoading()
-        self.getDateService.getPhotos { (dates) in
+        self.getDateService.getDates { (dates) in
             self.dateView?.ShowData(dates)
             self.dateView?.stopLoading()
         }

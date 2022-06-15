@@ -9,6 +9,9 @@ import UIKit
 
 class PhotoScreenViewController: UIViewController {
 
+    var theDate: String?
+    var theImage: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

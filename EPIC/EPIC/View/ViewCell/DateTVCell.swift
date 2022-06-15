@@ -16,7 +16,7 @@ class DateTVCell: UITableViewCell {
         // Initialization code
     }
 
-    func setup(dateCell: MainResult){
+    func setup(dateCell: DateResult){
         dateLbl.text = dateCell.date
     }
 }

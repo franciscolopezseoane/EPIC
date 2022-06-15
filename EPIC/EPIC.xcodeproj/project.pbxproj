@@ -21,11 +21,14 @@
 		A7029ABB28595F2300939B83 /* PhotoScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029ABA28595F2300939B83 /* PhotoScreenViewController.swift */; };
 		A7029ABD28595F6500939B83 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029ABC28595F6500939B83 /* PlayerViewController.swift */; };
 		A7029ABF285960AF00939B83 /* DatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029ABE285960AF00939B83 /* DatePresenter.swift */; };
-		A7029AC1285960EB00939B83 /* ObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029AC0285960EB00939B83 /* ObjectView.swift */; };
+		A7029AC1285960EB00939B83 /* protocolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029AC0285960EB00939B83 /* protocolView.swift */; };
 		A7029AC32859615100939B83 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029AC22859615100939B83 /* APIManager.swift */; };
-		A7029AC52859617E00939B83 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029AC42859617E00939B83 /* Object.swift */; };
+		A7029AC52859617E00939B83 /* DateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029AC42859617E00939B83 /* DateModel.swift */; };
 		A7029AC9285962F000939B83 /* DateTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029AC7285962F000939B83 /* DateTVCell.swift */; };
 		A7029ACA285962F000939B83 /* DateTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7029AC8285962F000939B83 /* DateTVCell.xib */; };
+		A7029ACC28596CE700939B83 /* PhotoListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029ACB28596CE700939B83 /* PhotoListModel.swift */; };
+		A7029ACE28596F1E00939B83 /* PhotoListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029ACD28596F1E00939B83 /* PhotoListPresenter.swift */; };
+		A7029AD12859728800939B83 /* PhotoCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7029ACF2859728800939B83 /* PhotoCVCell.swift */; };
 		B94D86237297D6A056397EA5 /* Pods_EPIC_EPICUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 673B4FCEDF731A6D7C9BE43B /* Pods_EPIC_EPICUITests.framework */; };
 		E91D9304349C582AC5FA4D5F /* Pods_EPIC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C445131CAF798AF99D8947E /* Pods_EPIC.framework */; };
 /* End PBXBuildFile section */
@@ -71,11 +74,14 @@
 		A7029ABA28595F2300939B83 /* PhotoScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoScreenViewController.swift; sourceTree = "<group>"; };
 		A7029ABC28595F6500939B83 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		A7029ABE285960AF00939B83 /* DatePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePresenter.swift; sourceTree = "<group>"; };
-		A7029AC0285960EB00939B83 /* ObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectView.swift; sourceTree = "<group>"; };
+		A7029AC0285960EB00939B83 /* protocolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocolView.swift; sourceTree = "<group>"; };
 		A7029AC22859615100939B83 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		A7029AC42859617E00939B83 /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
+		A7029AC42859617E00939B83 /* DateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateModel.swift; sourceTree = "<group>"; };
 		A7029AC7285962F000939B83 /* DateTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTVCell.swift; sourceTree = "<group>"; };
 		A7029AC8285962F000939B83 /* DateTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateTVCell.xib; sourceTree = "<group>"; };
+		A7029ACB28596CE700939B83 /* PhotoListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListModel.swift; sourceTree = "<group>"; };
+		A7029ACD28596F1E00939B83 /* PhotoListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListPresenter.swift; sourceTree = "<group>"; };
+		A7029ACF2859728800939B83 /* PhotoCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCVCell.swift; sourceTree = "<group>"; };
 		CCD4B0A5EF107C4F39F6DD17 /* Pods-EPIC-EPICUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EPIC-EPICUITests.debug.xcconfig"; path = "Target Support Files/Pods-EPIC-EPICUITests/Pods-EPIC-EPICUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D1BD3EFD695F5786C88E2E36 /* Pods_EPICTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EPICTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE7D1576BBABD746DBA7EABB /* Pods-EPIC-EPICUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EPIC-EPICUITests.release.xcconfig"; path = "Target Support Files/Pods-EPIC-EPICUITests/Pods-EPIC-EPICUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -189,7 +195,8 @@
 		A7029AB128595C9A00939B83 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A7029AC42859617E00939B83 /* Object.swift */,
+				A7029AC42859617E00939B83 /* DateModel.swift */,
+				A7029ACB28596CE700939B83 /* PhotoListModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -197,7 +204,7 @@
 		A7029AB228595C9C00939B83 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A7029AC0285960EB00939B83 /* ObjectView.swift */,
+				A7029AC0285960EB00939B83 /* protocolView.swift */,
 				A7029AC6285962D200939B83 /* ViewCell */,
 			);
 			path = View;
@@ -207,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				A7029ABE285960AF00939B83 /* DatePresenter.swift */,
+				A7029ACD28596F1E00939B83 /* PhotoListPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -244,6 +252,7 @@
 			children = (
 				A7029AC7285962F000939B83 /* DateTVCell.swift */,
 				A7029AC8285962F000939B83 /* DateTVCell.xib */,
+				A7029ACF2859728800939B83 /* PhotoCVCell.swift */,
 			);
 			path = ViewCell;
 			sourceTree = "<group>";
@@ -269,6 +278,7 @@
 				A7029A25285911F300939B83 /* Sources */,
 				A7029A26285911F300939B83 /* Frameworks */,
 				A7029A27285911F300939B83 /* Resources */,
+				BDE1E4923F6A61F3944CBE07 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -306,6 +316,7 @@
 				A7029A45285911F500939B83 /* Sources */,
 				A7029A46285911F500939B83 /* Frameworks */,
 				A7029A47285911F500939B83 /* Resources */,
+				330C72170EE4E788EF60BA2D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -411,6 +422,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		330C72170EE4E788EF60BA2D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EPIC-EPICUITests/Pods-EPIC-EPICUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EPIC-EPICUITests/Pods-EPIC-EPICUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EPIC-EPICUITests/Pods-EPIC-EPICUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B3597567914787DEA66B1211 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -431,6 +459,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDE1E4923F6A61F3944CBE07 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EPIC/Pods-EPIC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EPIC/Pods-EPIC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EPIC/Pods-EPIC-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F9FAF3088E9763089085D7AA /* [CP] Check Pods Manifest.lock */ = {
@@ -462,10 +507,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7029AC52859617E00939B83 /* Object.swift in Sources */,
+				A7029AC52859617E00939B83 /* DateModel.swift in Sources */,
 				A7029A31285911F300939B83 /* DateViewController.swift in Sources */,
+				A7029ACC28596CE700939B83 /* PhotoListModel.swift in Sources */,
+				A7029AD12859728800939B83 /* PhotoCVCell.swift in Sources */,
+				A7029ACE28596F1E00939B83 /* PhotoListPresenter.swift in Sources */,
 				A7029A2D285911F300939B83 /* AppDelegate.swift in Sources */,
-				A7029AC1285960EB00939B83 /* ObjectView.swift in Sources */,
+				A7029AC1285960EB00939B83 /* protocolView.swift in Sources */,
 				A7029AC32859615100939B83 /* APIManager.swift in Sources */,
 				A7029ABF285960AF00939B83 /* DatePresenter.swift in Sources */,
 				A7029AB828595E7500939B83 /* PhotosListViewController.swift in Sources */,

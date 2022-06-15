@@ -6,6 +6,8 @@ target 'EPIC' do
   use_frameworks!
 
   # Pods for EPIC
+  pod 'Kingfisher', '~> 7.0'
+  
 
   target 'EPICTests' do
     inherit! :search_paths

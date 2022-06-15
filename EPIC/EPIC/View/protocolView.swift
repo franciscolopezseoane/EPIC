@@ -10,5 +10,11 @@ import Foundation
 protocol DateView: NSObjectProtocol {
     func startLoading()
     func stopLoading()
-    func ShowData(_ dates: [MainResult])
+    func ShowData(_ dates: [DateResult])
+}
+
+protocol PhotoListView: NSObjectProtocol {
+    func startLoading()
+    func stopLoading()
+    func ShowData(_ photos: [PhotoResult])
 }

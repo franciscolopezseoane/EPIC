@@ -11,7 +11,7 @@ class DateViewController: UIViewController {
 
     private var viewProgress: UIActivityIndicatorView!
     @IBOutlet weak var theTableView: UITableView!
-    private var theDates = [MainResult]()
+    private var theDates = [DateResult]()
     
     private var presenter = DatePresenter(getService: APIManager())
     
@@ -85,7 +85,7 @@ extension DateViewController: DateView {
         }
     }
     
-    func ShowData(_ dates: [MainResult]) {
+    func ShowData(_ dates: [DateResult]) {
         self.theDates = dates
         DispatchQueue.main.async {
             self.theTableView.reloadData()
