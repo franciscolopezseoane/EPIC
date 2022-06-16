@@ -56,7 +56,6 @@ extension DateViewController: UITableViewDelegate, UITableViewDataSource {
             for i in theDates.reversed(){
                 newArr.append(i)
             }
-
             dateCell.setup(dateCell: newArr[indexPath.row])
         }
         return cell

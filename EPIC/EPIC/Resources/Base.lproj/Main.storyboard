@@ -227,6 +227,7 @@
                                                 </imageView>
                                             </subviews>
                                         </view>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="FQK-T8-oh3" secondAttribute="trailing" constant="60" id="0sp-P8-Woy"/>
                                             <constraint firstItem="FQK-T8-oh3" firstAttribute="leading" secondItem="CoN-bW-Zvc" secondAttribute="leading" constant="60" id="3V2-jz-cmH"/>
@@ -236,6 +237,7 @@
                                         <size key="customSize" width="366" height="235"/>
                                         <connections>
                                             <outlet property="sliderImageView" destination="FQK-T8-oh3" id="6tP-fe-SMX"/>
+                                            <outletCollection property="gestureRecognizers" destination="XMt-SV-dNK" appends="YES" id="fg3-vJ-HMv"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -262,6 +264,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ee8-r9-dJb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="XMt-SV-dNK"/>
             </objects>
             <point key="canvasLocation" x="2671" y="820"/>
         </scene>

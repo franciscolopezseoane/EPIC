@@ -47,7 +47,7 @@ class PlayerViewController: UIViewController {
     }
 
     func startTimer(){
-        self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.changeImage), userInfo: nil, repeats: true)
+        self.timer = Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(self.changeImage), userInfo: nil, repeats: true)
     }
     
    @objc func changeImage() {
@@ -74,10 +74,17 @@ extension PlayerViewController: UICollectionViewDelegate, UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SliderCollectionViewCell", for: indexPath) as! SliderCollectionViewCell
-        if let photo = photosArr[indexPath.row] as? PhotoList {
-            cell.setup(sliderModel: photo)
-        }
+        let photo = photosArr[indexPath.row]
+        cell.setup(sliderModel: photo)
         return cell
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        for cell in sliderCollection.visibleCells{
+            let indexPath = sliderCollection.indexPath(for: cell)
+            counter = indexPath!.row
+            pageView.currentPage = counter
+        }
     }
 }
 

@@ -68,7 +68,6 @@ extension PhotosListViewController {
                 dateFormatterPrint.dateFormat = "yyyy/MM/dd"
                 let date: Date? = dateFormatterGet.date(from: i.date)
                 print(dateFormatterPrint.string(from: date!))
-
                 let object = PhotoList(identifier: i.identifier, date: dateFormatterPrint.string(from:date!))
                 theList.append(object)
             }
@@ -88,14 +87,11 @@ extension PhotosListViewController: UICollectionViewDelegate, UICollectionViewDa
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PhotoCVCell", for: indexPath) as! PhotoCVCell
 
-        if let photo = searchPhotos[indexPath.row] as? PhotoList {
-         
-            cell.setup(photoModel: photo)
-        }
-  
+        let photo = searchPhotos[indexPath.row]
+        cell.setup(photoModel: photo)
+        
         return cell
     }
     
