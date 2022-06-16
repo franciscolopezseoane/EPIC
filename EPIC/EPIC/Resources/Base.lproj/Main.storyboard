@@ -131,7 +131,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wej-jA-01x">
-                        <barButtonItem key="rightBarButtonItem" title="Player" id="KbJ-kt-hUM">
+                        <barButtonItem key="rightBarButtonItem" image="play.fill" catalog="system" id="KbJ-kt-hUM">
                             <connections>
                                 <action selector="playerBtn:" destination="AwO-i0-oBb" id="JK3-x9-2vM"/>
                             </connections>
@@ -340,6 +340,7 @@
     </scenes>
     <resources>
         <image name="placeHolder" width="110" height="92"/>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
