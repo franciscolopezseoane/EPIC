@@ -12,8 +12,8 @@ class PhotoScreenViewController: UIViewController, UIScrollViewDelegate {
     var theDate: String?
     var theIdentifier: String?
     var epicPhoto: UIImage?
-    private var viewProgress: UIActivityIndicatorView!
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var theImageView: UIImageView!
     @IBOutlet weak var scrollView: UIScrollView!
     
@@ -36,7 +36,6 @@ class PhotoScreenViewController: UIViewController, UIScrollViewDelegate {
 extension PhotoScreenViewController {
     
     func setupView(){
-        self.setupProgressView()
         self.startSearch()
     }
     
@@ -45,25 +44,18 @@ extension PhotoScreenViewController {
         let query = theIdentifier
         self.presenter.getPhoto(theDate ?? "", query ?? "")
     }
-    
-    func setupProgressView(){
-        self.viewProgress = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
-        self.viewProgress.center = self.view.center
-        self.viewProgress.isHidden = true
-        self.view.addSubview(self.viewProgress)
-    }
 }
 
 extension PhotoScreenViewController: PhotoView {
     func startLoading() {
-        self.viewProgress.isHidden = false
-        self.viewProgress.startAnimating()
+        self.activityIndicator.isHidden = false
+        self.activityIndicator.startAnimating()
     }
     
     func stopLoading() {
         DispatchQueue.main.async {
-            self.viewProgress.stopAnimating()
-            self.viewProgress.hidesWhenStopped = true
+            self.activityIndicator.stopAnimating()
+            self.activityIndicator.hidesWhenStopped = true
         }
     }
     

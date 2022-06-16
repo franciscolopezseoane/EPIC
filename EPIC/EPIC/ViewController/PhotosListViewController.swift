@@ -10,13 +10,15 @@ import UIKit
 class PhotosListViewController: UIViewController {
 
     var theDate: String?
-    private var viewProgress: UIActivityIndicatorView!
+    
     private var theObjects = [PhotoResult]()
     private var theList: [PhotoList] = []
     private var searchPhotos = [PhotoList]()
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    private var viewProgress: UIActivityIndicatorView!
+    @IBOutlet weak var playerBtn: UIBarButtonItem!
     @IBOutlet weak var photoCollection: UICollectionView!
-    
     
     private var presenter = PhotoListPresenter(getService: APIManager())
     
@@ -26,6 +28,8 @@ class PhotosListViewController: UIViewController {
         self.presenter.attachView(view: self)
         photoCollection.delegate = self
         photoCollection.dataSource = self
+        playerBtn.isEnabled = false
+        
     }
     
     @IBAction func playerBtn(_ sender: Any) {
@@ -39,15 +43,9 @@ class PhotosListViewController: UIViewController {
 
 extension PhotosListViewController {
     
-    
     func setupView(){
-        self.setupProgressView()
         self.startSearch()
-    }
-    
-    func startSearch(){
-        let query = theDate
-        self.presenter.getPhotostDate(query: query ?? "")
+        self.setupProgressView()
     }
     
     func setupProgressView(){
@@ -56,33 +54,31 @@ extension PhotosListViewController {
         self.viewProgress.isHidden = true
         self.view.addSubview(self.viewProgress)
     }
+    func startSearch(){
+        let query = theDate
+        self.presenter.getPhotostDate(query: query ?? "")
+    }
     
     func starPhotoListRequest(){
         if theObjects.count > 0 {
             for i in self.theObjects{
-                
                 let dateFormatterGet = DateFormatter()
                 dateFormatterGet.dateFormat = "yyyy-MM-dd HH:mm:ss"
-                
                 let dateFormatterPrint = DateFormatter()
                 dateFormatterPrint.dateFormat = "yyyy/MM/dd"
-                
                 let date: Date? = dateFormatterGet.date(from: i.date)
                 print(dateFormatterPrint.string(from: date!))
 
                 let object = PhotoList(identifier: i.identifier, date: dateFormatterPrint.string(from:date!))
                 theList.append(object)
-                
             }
             searchPhotos = theList
-            print("SEARCH FOTOS! \(searchPhotos.count)")
         }
         DispatchQueue.main.async {
             self.photoCollection.reloadData()
+            self.playerBtn.isEnabled = true
         }
     }
-    
-    
 }
 
 extension PhotosListViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -94,15 +90,12 @@ extension PhotosListViewController: UICollectionViewDelegate, UICollectionViewDa
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PhotoCVCell", for: indexPath) as! PhotoCVCell
-        
-        
+
         if let photo = searchPhotos[indexPath.row] as? PhotoList {
-            cell.activityIndicator.isHidden = false
-            cell.activityIndicator.startAnimating()
+         
             cell.setup(photoModel: photo)
         }
-        cell.activityIndicator.stopAnimating()
-        cell.activityIndicator.isHidden = true
+  
         return cell
     }
     
@@ -121,21 +114,20 @@ extension PhotosListViewController: PhotoListView {
 
     func startLoading() {
         DispatchQueue.main.async {
-            self.viewProgress.isHidden = false
-            self.viewProgress.startAnimating()
+            self.activityIndicator.isHidden = false
+            self.activityIndicator.startAnimating()
         }
     }
     
     func stopLoading() {
         DispatchQueue.main.async {
-            self.viewProgress.stopAnimating()
-            self.viewProgress.hidesWhenStopped = true
+            self.activityIndicator.stopAnimating()
+            self.activityIndicator.hidesWhenStopped = true
         }
     }
     
     func ShowData(_ photos: [PhotoResult]) {
         self.theObjects = photos
         self.starPhotoListRequest()
-       
     }
 }

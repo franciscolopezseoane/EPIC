@@ -51,6 +51,7 @@ class APIManager {
         task.resume()
     }
     
+    
     func getThumbnails(_ date: String ,_ query: String) -> URL {
         if let url = URL(string: "https://epic.gsfc.nasa.gov/archive/natural/"+date+"/thumbs/epic_1b_"+query+".jpg") {
             return url
@@ -58,6 +59,7 @@ class APIManager {
             return URL(string: "https://epic.gsfc.nasa.gov/contents/assets/logo.png")!
         }
     }
+    
     
     func getResPhoto(_ date: String, _ query: String, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
         let url = URL(string: "https://epic.gsfc.nasa.gov/archive/natural/"+date+"/png/epic_1b_"+query+".png")!

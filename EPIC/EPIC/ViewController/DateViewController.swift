@@ -90,8 +90,4 @@ extension DateViewController: DateView {
             self.theTableView.reloadData()
         }
     }
-    
-    
 }
-
-
