@@ -47,7 +47,7 @@ class PlayerViewController: UIViewController {
     }
 
     func startTimer(){
-        self.timer = Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(self.changeImage), userInfo: nil, repeats: true)
+        self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.changeImage), userInfo: nil, repeats: true)
     }
     
    @objc func changeImage() {
