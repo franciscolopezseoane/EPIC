@@ -52,11 +52,12 @@ extension DateViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "dateCell", for: indexPath)
         
         if let dateCell = cell as? DateTVCell{
-            var newSort = theDates
-                newSort.sort{
-                $1.date > $0.date
+            var newArr = [DateResult]()
+            for i in theDates.reversed(){
+                newArr.append(i)
             }
-            dateCell.setup(dateCell: newSort[indexPath.row])
+
+            dateCell.setup(dateCell: newArr[indexPath.row])
         }
         return cell
     }
